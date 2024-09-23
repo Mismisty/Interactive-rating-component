@@ -1,0 +1,193 @@
+:root{
+    
+ --Orange: hsl(25, 97%, 53%);
+
+
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--darkblue: hsl(213, 20%, 22%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+
+--Fontsizeparagraph: 15px;
+
+--font-family: Overpass, Sans serif;
+--weight: 400;
+--weights: 700;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.attribution{
+    margin-top: 50em;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--VeryDarkBlue);
+    
+}
+
+main {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 345px;
+    background-color:var(--Dark-Blue);
+    border-radius: 15px;
+    
+}
+
+.star {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    padding: 1em;
+    border-radius: 50%;
+    background-color: var(--darkblue);
+   
+}
+
+h1 {
+    margin-left: 1.2em;
+    font-size: 23px;
+    color: var(--White);
+
+}
+
+.paragraph {
+    font-size: var(--Fontsizeparagraph);
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    width: 20em;
+    color: var(--LightGrey);
+    line-height: 1.5;
+}
+
+.container {
+    margin: 2em 0;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    
+}
+
+.rate {
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--darkblue);
+    color: var(--LightGrey);
+    border: none;
+    cursor: pointer;
+}
+
+.rate:hover{
+    background-color: var(--Orange);
+    color: var(--VeryDarkBlue);
+}
+
+.rate.active {
+    background-color: var(--White);
+}
+
+.submit {
+    display: block;
+    margin: 1.5em auto;
+    width: 21em;
+    padding: 1em;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--Orange);
+    font-weight: var(--weights);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: var(--White);
+}
+
+
+
+/**
+* !----------THANK YOU SECTION------------
+*/
+.thank-you-card {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 345px;
+    background-color:var(--Dark-Blue);
+    border-radius: 15px;
+    display: none;
+    
+}
+
+.illustration-thanks {
+    display: block;
+    margin: auto;
+    padding-top: 2.5em;
+}
+
+.rating-display {
+    
+    display: block;
+    width: 12em;
+    height: 40px;
+    margin: 2em auto;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 40px;
+    background-color: var(--darkblue);
+    color: var(--Orange);
+
+}
+
+
+
+h2 {
+    text-align: center;
+    color: var(--White);
+}
+
+.feedback-thank-you p {
+    color: var(--LightGrey);
+    margin: 1.5em 0;
+    font-size: 14px;
+    padding: 0 1.5em;
+    text-align: center;
+}
+
+/*
+!-----------DESKTOP SECTION-----------------!
+*/
+
+@media screen and (min-width:768px){
+    #main-card {
+       top: 55%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 375px;
+    }
+
+    .paragraph {
+        width: 22em;
+    }
+}
+
+
